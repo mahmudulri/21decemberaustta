@@ -22,6 +22,7 @@ abstract class Routes {
   static const USER_PROFILE = _Paths.USER_PROFILE;
   static const NOTIFICATION_VIEW = _Paths.NOTIFICATION_VIEW;
   static const CREATE_NOTIFICATION = _Paths.CREATE_NOTIFICATION;
+  static const UPLOAD_VIDEO = _Paths.UPLOAD_VIDEO;
 }
 
 abstract class _Paths {
@@ -43,4 +44,5 @@ abstract class _Paths {
   static const USER_PROFILE = '/user-profile';
   static const NOTIFICATION_VIEW = '/notification-view';
   static const CREATE_NOTIFICATION = '/create-notification';
+  static const UPLOAD_VIDEO = '/upload-video';
 }

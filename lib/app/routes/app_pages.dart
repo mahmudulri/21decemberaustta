@@ -1,4 +1,5 @@
 import 'package:aust_textile_alumni/app/modules/notification_create/views/create_notification.dart';
+import 'package:aust_textile_alumni/app/modules/upload_video/views/upload_video.dart';
 import 'package:get/get.dart';
 
 import '../modules/alumni_book/bindings/alumni_book_binding.dart';
@@ -39,7 +40,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.VIDEO_STREAM;
+  static const INITIAL = Routes.UPLOAD_VIDEO;
 
   static final routes = [
     GetPage(
@@ -126,6 +127,10 @@ class AppPages {
       name: _Paths.CREATE_NOTIFICATION,
       page: () => CreateNotification(),
       // binding: NotificationViewBinding(),
+    ),
+    GetPage(
+      name: _Paths.UPLOAD_VIDEO,
+      page: () => UploadVideo(),
     ),
   ];
 }

@@ -15,6 +15,7 @@ class VideoStreamView extends StatelessWidget {
     "Live Event",
     "Academic Tour"
   ];
+  String isAdmin = "admin";
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +27,15 @@ class VideoStreamView extends StatelessWidget {
       },
       child: SafeArea(
           child: Scaffold(
+        floatingActionButton: Visibility(
+          visible: isAdmin == "admin" ? true : false,
+          child: FloatingActionButton(
+              backgroundColor: Color(0xff00602B),
+              child: Icon(
+                Icons.add,
+              ),
+              onPressed: () {}),
+        ),
         backgroundColor: Color(0xffFFFFFF),
         appBar: AppBar(
           elevation: 0.0,
