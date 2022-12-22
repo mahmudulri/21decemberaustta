@@ -1,4 +1,5 @@
 import 'package:aust_textile_alumni/app/modules/notification_create/views/create_notification.dart';
+import 'package:aust_textile_alumni/app/modules/transaction/views/my_transactions.dart';
 import 'package:aust_textile_alumni/app/modules/upload_video/views/upload_video.dart';
 import 'package:get/get.dart';
 
@@ -40,7 +41,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.UPLOAD_VIDEO;
+  static const INITIAL = Routes.MY_TRANSACTIONS;
 
   static final routes = [
     GetPage(
@@ -131,6 +132,10 @@ class AppPages {
     GetPage(
       name: _Paths.UPLOAD_VIDEO,
       page: () => UploadVideo(),
+    ),
+    GetPage(
+      name: _Paths.MY_TRANSACTIONS,
+      page: () => MyTransaction(),
     ),
   ];
 }

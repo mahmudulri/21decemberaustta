@@ -23,6 +23,7 @@ abstract class Routes {
   static const NOTIFICATION_VIEW = _Paths.NOTIFICATION_VIEW;
   static const CREATE_NOTIFICATION = _Paths.CREATE_NOTIFICATION;
   static const UPLOAD_VIDEO = _Paths.UPLOAD_VIDEO;
+  static const MY_TRANSACTIONS = _Paths.MY_TRANSACTIONS;
 }
 
 abstract class _Paths {
@@ -45,4 +46,5 @@ abstract class _Paths {
   static const NOTIFICATION_VIEW = '/notification-view';
   static const CREATE_NOTIFICATION = '/create-notification';
   static const UPLOAD_VIDEO = '/upload-video';
+  static const MY_TRANSACTIONS = '/my-transaction';
 }
